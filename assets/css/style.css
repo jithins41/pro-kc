@@ -1,0 +1,10 @@
+.header-image{
+    height: 7em;
+}
+.card-grey{
+    padding: 2em 1em;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
