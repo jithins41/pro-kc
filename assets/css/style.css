@@ -120,7 +120,7 @@ body {
 }
 
 .cards {
-    position: absolute;
+    position: relative;
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
@@ -203,12 +203,30 @@ body {
 }
 
 .person-box {
-    background-image: url('assets/images/1920x618_bg2.jpg');
+    background-image: url('../../assets/images/1920x618_bg2.jpg');
     height: 618px;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .person-content {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+.person-header{
+    width: 100%;
     position: relative;
+    left: 5%;
+    top: 5%;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--red-medium);
+    text-decoration: underline;
+}
+.person-content{
+    position: relative;
+    left: 5%;
+    top: 10%;
+    width: 70%;
 }
