@@ -91,7 +91,7 @@ body {
 
 .main-back {
     /* background-image: url('/assets/images/1920x1050_bg1.jpg'); */
-    background-image: url('/assets/images/Web\ Banner.jpg');
+    background-image: url('../images/Web-Banner.jpg');
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -203,7 +203,7 @@ body {
 }
 
 .person-box {
-    background-image: url('/assets/images/1920x618_bg2.jpg');
+    background-image: url('assets/images/1920x618_bg2.jpg');
     height: 618px;
     background-position: center;
     background-repeat: no-repeat;
