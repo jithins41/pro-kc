@@ -1,10 +1,214 @@
-.header-image{
-    height: 7em;
+:root {
+    --red: #AB0B39;
+    --blue: #0D305B;
+    --red-hover: #a80b37d8;
+    --blue-light: #123F7E;
+    --blue-dark: #0C2A54;
+    --blue-medium: #0D1B39;
+    --red-medium: #AA0C38;
 }
-.card-grey{
+
+.navbar {
+    z-index: 999;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-image {
+    height: 7em;
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 150px;
+    height: 50px;
+    transform: scale(1.35);
+    margin-left: 3rem;
+}
+
+.card-grey {
     padding: 2em 1em;
     background-color: beige;
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+/* Top Loader */
+
+#loader {
+    width: 0%;
+    height: 2px;
+    background-color: var(--red);
+    position: fixed;
+    /* border: 1px solid red; */
+    animation: loader 0.5s;
+}
+
+@keyframes loader {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes backzoom {
+    0% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(105%);
+    }
+    0% {
+        transform: scale(100%);
+    }
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.text-blue {
+    color: #0D305B;
+}
+
+.text-red {
+    color: #AB0B39;
+}
+
+.nav-item {
+    padding: 0px 0.5em;
+}
+
+.main-back {
+    /* background-image: url('/assets/images/1920x1050_bg1.jpg'); */
+    background-image: url('/assets/images/Web\ Banner.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* animation: backzoom 5s infinite;
+    animation-direction: alternate; */
+}
+
+.nav-main {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+}
+
+.btn-red {
+    background-color: var(--red);
+    padding: 0.75rem 2rem;
+    color: #fff;
+}
+
+.btn-red:hover {
+    background-color: var(--red-hover);
+    padding: 0.75rem 2rem;
+    color: #fff;
+}
+
+.cards {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    margin-top: -100px;
+}
+
+.kc-register {
+    background-color: var(--blue-light);
+    color: white;
+}
+
+.kc-events {
+    background-color: var(--blue-medium);
+    color: white;
+}
+
+.kc-involved {
+    background-color: var(--blue-dark);
+    color: white;
+}
+
+.kc-donate {
+    background-color: var(--red-medium);
+    color: white;
+}
+
+.cards-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards-title {
+    font-size: x-large;
+    text-align: center;
+}
+
+.kc-card {
+    height: 200px;
+    width: 100%;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cards-content .fas {
+    font-size: 4rem;
+}
+
+.kc-card .card-body {
+    height: 100%;
+}
+
+.main-text-area {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+.main-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: none;
+}
+
+.main-text-sub {
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    /* font-style: oblique; */
+    font-weight: 200;
+}
+
+.main-text-title {
+    color: white;
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.person-box {
+    background-image: url('/assets/images/1920x618_bg2.jpg');
+    height: 618px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.person-content {
+    position: relative;
 }
