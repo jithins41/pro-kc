@@ -7,13 +7,18 @@
     --blue-medium: #0D1B39;
     --red-medium: #AA0C38;
 }
-
+html{
+    height: 100%;
+}
 .navbar {
     z-index: 999;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 .header-image {
@@ -175,7 +180,7 @@ body {
 }
 
 .main-text-area {
-    position: absolute;
+    position: relative;
     top: 35%;
     left: 10%;
 }
@@ -210,11 +215,12 @@ body {
 }
 
 .person-content {
-   display: flex;
-   flex-direction: column;
-   height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
-.person-header{
+
+.person-header {
     width: 100%;
     position: relative;
     left: 5%;
@@ -224,9 +230,68 @@ body {
     color: var(--red-medium);
     text-decoration: underline;
 }
-.person-content{
+
+.person-content {
     position: relative;
     left: 5%;
     top: 10%;
     width: 70%;
+}
+
+.bottom-group {
+    display: flex;
+    flex-direction: row;
+    height: 130px;
+}
+
+.join-team {
+    flex: 1.25;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.join-team h3 {
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.join-team input {
+    font-weight: lighter;
+    letter-spacing: 3px;
+    z-index: 10;
+    font-size: 12px;
+    outline: none;
+    font-size: x-large;
+}
+
+.donate-now {
+    flex: 1;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.donate-now h3{
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+main{
+    flex: 1;
+    min-height: 100%;
+}
+footer{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center; 
+    background-color: var(--blue);
+   
+}
+.footer-text{
+    color: white;
+    padding: 2em 0;
 }
