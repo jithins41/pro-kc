@@ -6,10 +6,14 @@
     --blue-dark: #0C2A54;
     --blue-medium: #0D1B39;
     --red-medium: #AA0C38;
+    --grey-dark: #333333;
+    --grey-light: #f6f6f6;
 }
-html{
+
+html {
     height: 100%;
 }
+
 .navbar {
     z-index: 999;
 }
@@ -74,12 +78,28 @@ body {
     }
 }
 
+.mt-6 {
+    margin-top: 6em !important;
+}
+
 .bg-blue {
-    background-color: var(--blue);
+    background-color: var(--blue) !important;
+}
+
+.bg-blue-lt {
+    background-color: var(--blue-light) !important;
 }
 
 .bg-red {
-    background-color: var(--red);
+    background-color: var(--red) !important;
+}
+
+.bg-grey-dk {
+    background-color: var(--grey-dark) !important;
+}
+
+.bg-grey-lt {
+    background-color: var(--grey-light) !important;
 }
 
 .text-blue {
@@ -110,6 +130,12 @@ body {
     position: absolute;
     width: 100%;
     background-color: transparent;
+}
+
+.nav-second {
+    position: relative;
+    width: 100%;
+    background-color: var(--red);
 }
 
 .btn-red {
@@ -183,6 +209,7 @@ body {
     position: relative;
     top: 35%;
     left: 10%;
+    width: 75%;
 }
 
 .main-text-content {
@@ -276,22 +303,121 @@ body {
     align-items: center;
     color: white;
 }
-.donate-now h3{
+
+.donate-now h3 {
     letter-spacing: 1px;
     font-weight: lighter;
 }
-main{
+
+main {
     flex: 1;
     min-height: 100%;
 }
-footer{
+
+footer {
     margin-top: 1em;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     background-color: var(--blue);
-   
 }
-.footer-text{
+
+.footer-text {
     color: white;
     padding: 2em 0;
+}
+
+.about-title {
+    font-size: xx-large;
+    font-weight: 700;
+    background-color: var(--grey-light);
+    color: var(--grey-dark);
+    font-size: 3rem;
+}
+
+.about-party-title h3 {
+    font-weight: 400;
+}
+
+.about-party-title p {
+    margin-top: 2em;
+    font-weight: 400;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.social-icons {
+    font-size: 1.75em;
+    letter-spacing: 4px;
+}
+
+.card-image-full {
+    width: 100%;
+}
+
+.text-input {
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+}
+
+.join-form-components h3 {
+    font-weight: 300;
+}
+
+.join-form-components p {
+    font-weight: 200;
+}
+
+.event-section {
+    background-color: var(--grey-light);
+    padding: 2em 1em;
+}
+
+.event-item {
+    display: flex;
+    justify-content: center;
+}
+
+.event-item .event-date {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red);
+    padding: 0.5rem 1rem;
+}
+
+.event-item .event-date .month{
+    font-size: larger;
+}
+.event-item .event-date .date{
+    font-size: xx-large;
+    font-weight: 600;
+}
+.event-item .event-details{
+    flex: 1;
+    padding: 0.5em 1em;
+    display: flex;
+    flex-direction: column;
+}
+.event-item .event-details title{
+    
+    color: black;
+}
+
+.event-item .event-details .location{
+color: grey;
+}
+.event-item .event-details .time{
+    color: gray;
+}
+
+
+
+
+.title-small {
+    font-weight: 200;
 }
