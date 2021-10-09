@@ -454,9 +454,7 @@ footer {
 @media(max-width:576px) {}
 
 /* Equivalent to SM */
-.main-back{
-    background-size: contain;
-}
+
 
 @media (max-width:768px) {
     .navbar {
