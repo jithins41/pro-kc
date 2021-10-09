@@ -16,14 +16,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </body>
 </head>
 
 <body>
-    <main>
+    <main >
         <section id="loader"></section>
         <!-- Navbar section -->
-        <section style="position: relative;">
-            <nav class="navbar navbar-expand-md navbar-dark bg-transparent nav-main py-5">
+        <section  style="position: relative;">
+            <nav data-aos="fade-up" data-aos-duration="1000" class="navbar navbar-expand-md navbar-dark bg-transparent nav-main py-5">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img class="logo-image" src="assets/images/kc_logo_temp_1.svg" alt="" width="" height="">
@@ -44,11 +47,12 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                  More
+                                    More
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="/news.html">News &amp; Updates</a></li>
-                                    <li><a class="dropdown-item" href="http://pjjoseph.com/kc">Parent Organization</a></li>
+                                    <li><a class="dropdown-item" href="http://pjjoseph.com/kc">Parent Organization</a>
+                                    </li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
@@ -69,8 +73,8 @@
         <div class="main-back">
             <div class="main-text-area">
                 <div class="main-text-content">
-                    <h4 class="main-text-sub">Together, we will move</h4>
-                    <h2 class="main-text-title">Kerala forward!</h2>
+                    <h4 data-aos="fade-right" data-aos-duration="1000" class="main-text-sub">Together, we will move</h4>
+                    <h2 data-aos="fade-right" data-aos-duration="1000" class="main-text-title">Kerala forward!</h2>
                 </div>
             </div>
         </div>
@@ -78,7 +82,7 @@
         <!-- Card Section -->
         <section>
             <div class="cards">
-                <div class="container">
+                <div class="container" data-aos="fade-up" data-aos-duration="1000">
                     <div class="row">
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="kc-card kc-register mt-3">
@@ -126,7 +130,7 @@
             </div>>
         </section>
         <!-- Cards section end -->
-        <section class="container mt-5">
+        <section class="container mt-5" data-aos="fade-up" data-aos-duration="1000">
             <div class="row">
                 <div class="col-12  d-block text-center">
                     <h3>Kerala Congress Prioritites</h3>
@@ -136,7 +140,7 @@
                 </div>
             </div>
         </section>
-        <section class="container">
+        <section class="container" data-aos="fade-up" data-aos-duration="1000">
             <div class="owl-carousel owl-theme">
                 <div> <img class="img-fluid" src="assets/images/banner.jpg" alt=""> </div>
                 <div> <img class="img-fluid" src="assets/images/banner_2.jpg" alt=""> </div>
@@ -147,7 +151,7 @@
             </div>
         </section>
         <section>
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
                 <div class="row">
                     <div style="padding: 0px;" class="col-md-6">
                         <div class="news-box">
@@ -181,7 +185,7 @@
             </div>
         </section>
         <!-- About Professional Kerala Congress -->
-        <section class="mt-5">
+        <section class="mt-5" data-aos="fade-up" data-aos-duration="1000">
             <div class="person-box bg-grey-lt">
                 <div class="container">
                     <div class="person-content">
@@ -213,12 +217,13 @@
         </section>
         <!-- Join section -->
         <section class="mt-3">
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-duration="1000">
                 <div class="col-md-8 bg-blue py-4">
                     <div class="container d-flex justify-content-center align-item-center">
-                        <h3 class="join-label my-auto">JOIN OUR TEAM</h3>
-                        <input class="join-text" type="text" placeholder="Email address" name="email" id="email">
-                        <button class="btn btn-red">Register</button>
+                        <h3 onclick="window.location.href='http://keralacongress.herokuapp.com'"
+                            class="join-label my-auto">JOIN OUR TEAM</h3>
+                        <!-- <input class="join-text" type="text" placeholder="Email address" name="email" id="email">
+                        <button class="btn btn-red">Register</button> -->
                     </div>
                 </div>
                 <div class="col-md-4 bg-red py-4">
@@ -231,7 +236,7 @@
         <!-- End Join Section -->
     </main>
 
-    <footer>
+    <footer data-aos="fade-up" data-aos-duration="1000">
         <div class="footer-text">
             Professional Kerala Congress &copy; 2021
         </div>
@@ -245,6 +250,7 @@
     <script src="assets/dist/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
+         AOS.init();
         $(document).ready(function () {
             // $('.owl-carousel').owlCarousel();
             var owl = $('.owl-carousel');
@@ -270,6 +276,6 @@
             });
         });
     </script>
-</body>
+
 
 </html>

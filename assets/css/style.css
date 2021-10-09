@@ -207,7 +207,7 @@ body {
 
 .main-text-area {
     position: relative;
-    top: 35%;
+    top: 70%;
     left: 10%;
     width: 75%;
 }
@@ -273,6 +273,7 @@ body {
     font-weight: lighter;
     letter-spacing: 1px;
     color: white;
+    cursor: pointer;
 }
 
 .join-text {
@@ -453,6 +454,9 @@ footer {
 @media(max-width:576px) {}
 
 /* Equivalent to SM */
+.main-back{
+    background-size: contain;
+}
 
 @media (max-width:768px) {
     .navbar {
